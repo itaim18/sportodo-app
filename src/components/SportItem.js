@@ -1,6 +1,7 @@
 import React from "react";
 
 const SportItem = ({
+  idSport,
   strSport,
   strFormat,
   strSportThumb,

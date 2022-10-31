@@ -350,9 +350,9 @@ p {
   width: 100%;
   height: 7vh;
   font-size: 16px;
-  border: 3px solid currentColor;
+  border: 3px solid var(--clr-grey-1);
   padding: calc(0.5rem * 1.5) 0.5rem;
-  color: currentColor;
+  color: var(--clr-grey-10);
   background: transparent;
   border-radius: var(4px);
 }
@@ -463,5 +463,24 @@ span {
     grid-template-columns: auto auto auto;
   }
 }
+/* loading */
+.loading {
+  position: relative;
+  animation: infinite ball 5s ease-in;
+  margin-right: 10%;
+  display: inline-block;
+  margin-top: 10%;
+}
 
+@keyframes ball {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 80%;
+  }
+  100% {
+    left: 0vh;
+  }
+}
 /* helper-classes */
