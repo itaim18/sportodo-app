@@ -1,13 +1,19 @@
-import React from "react";
 import logo from "../images/logo-sports.png";
 import { FaBars } from "react-icons/fa";
+import { useGlobalContext } from "../context";
 const Navbar = () => {
+  const { isSubmenu, setIsSubmenu } = useGlobalContext();
+  const handleToggle = () => {
+    setIsSubmenu(!isSubmenu);
+  };
   return (
     <nav className="navbar">
       <div className="navbar-center">
         <div className="nav-header">
-          <img src={logo} alt="logo sports" className="logo" />
-          <button className="btn toggle-btn">
+          <a href="#sports">
+            <img src={logo} alt="logo sports" className="logo" />
+          </a>
+          <button onClick={handleToggle} className="btn toggle-btn">
             <FaBars />
           </button>
         </div>

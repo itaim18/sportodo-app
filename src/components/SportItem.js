@@ -1,5 +1,4 @@
-import React from "react";
-
+import { useGlobalContext } from "../context";
 const SportItem = ({
   idSport,
   strSport,
@@ -8,6 +7,17 @@ const SportItem = ({
   strSportIconGreen,
   strSportDescription,
 }) => {
+  const { setModalData, setShowModal } = useGlobalContext();
+  const handleReadMore = () => {
+    setModalData({
+      strSport,
+      strFormat,
+      strSportThumb,
+      strSportIconGreen,
+      strSportDescription,
+    });
+    setShowModal(true);
+  };
   return (
     <li className="sport-card">
       <div className="sport-card-section">
@@ -20,7 +30,9 @@ const SportItem = ({
         </p>
         <p>
           <span>Description:</span> {strSportDescription.slice(0, 150)}
-          <button className="read-btn">...read more</button>
+          <button onClick={handleReadMore} className="read-btn">
+            ...read more
+          </button>
         </p>
 
         <img className="sport-thumbnail" src={strSportThumb} alt={strSport} />

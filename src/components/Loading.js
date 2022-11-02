@@ -1,4 +1,3 @@
-import React from "react";
 import Lottie from "react-lottie";
 import greenBall from "../images/green-ball.json";
 const Loading = () => {

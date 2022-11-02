@@ -6,6 +6,9 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [sports, setSports] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [isSubmenu, setIsSubmenu] = useState(false);
+  const [modalData, setModalData] = useState({});
+  const [showModal, setShowModal] = useState(false);
   const fetchSports = async () => {
     setLoading(true);
     const response = await fetch(url);
@@ -19,7 +22,19 @@ const AppProvider = ({ children }) => {
   }, []);
   return (
     <AppContext.Provider
-      value={{ loading, sports, setSports, searchTerm, setSearchTerm }}
+      value={{
+        loading,
+        sports,
+        setSports,
+        searchTerm,
+        setSearchTerm,
+        isSubmenu,
+        setIsSubmenu,
+        modalData,
+        setModalData,
+        showModal,
+        setShowModal,
+      }}
     >
       {children}
     </AppContext.Provider>

@@ -1,19 +1,22 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useRef } from "react";
 import { useGlobalContext } from "../context";
 const SearchBar = () => {
   const searchValue = useRef("");
-  const { setSports, sports, setSearchTerm } = useGlobalContext();
+  const { setSearchTerm } = useGlobalContext();
 
   const searchSports = () => {
     setSearchTerm(searchValue.current.value);
   };
-
+  const searchBtnClicked = () => {
+    document.getElementsByClassName("field")[0].value = "";
+  };
   return (
     <div className="section searchbar-section" id="sports">
       <div className="card card--accent">
         <h2 className="searchbar-title">find your sport...</h2>
         <label className="input">
           <input
+            onBlur={searchBtnClicked}
             className="field"
             type="text"
             placeholder=" "
@@ -23,7 +26,9 @@ const SearchBar = () => {
           <span className="input label">e.g: soccer</span>
         </label>
         <div className="button-group">
-          <button className="btn search-btn">Search</button>
+          <button onClick={searchBtnClicked} className="btn search-btn">
+            Search
+          </button>
         </div>
       </div>
     </div>
