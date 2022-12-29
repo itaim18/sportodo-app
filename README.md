@@ -5,6 +5,6 @@
 - custom UI/UX created personally by CSS files and inline style objects.
 
 
-#🏃 Sportodo
+# 🏃Sportodo
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/itaim18/sportodo-app/blob/master/src/images/logo-sports.png)
