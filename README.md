@@ -32,11 +32,11 @@
 #### Manual use:
 enter the [site](https://sportodo.netlify.app/) then enter the sport you are looking for and press the `read more` button to enjoy more information about it.
 
-###Links
+### Links
 ----
 [sportodo](http://localhost/)
 
 [Linkedin](http://localhost/ "link title")
 
-[id/name]: [https://github.com/itaim18]
+[name]: [https://github.com/itaim18]
 made by @ItaiM
