@@ -38,5 +38,5 @@ enter the [site](https://sportodo.netlify.app/) then enter the sport you are loo
 
 [Linkedin](http://localhost/ "link title")
 
-[name]: [https://github.com/itaim18]
-made by @ Itaim18
+[name]: [https://github.com/]
+made by @Itaim18
