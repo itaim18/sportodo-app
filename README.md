@@ -7,7 +7,6 @@
 
 # [sportodo](https://sportodo.netlify.app/)
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 ![](https://github.com/itaim18/sportodo-app/blob/master/src/images/logo-sports.png)
 
 
