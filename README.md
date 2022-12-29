@@ -17,9 +17,9 @@
 - CSS
 - Media queries(responsiveness)
 
-##Images
+## Images
 
-###Desktop:
+### Desktop:
 
 ![](https://pandao.github.io/editor.md/examples/images/4.jpg)
 
