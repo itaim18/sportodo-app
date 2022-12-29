@@ -11,14 +11,14 @@
 
 
 
-###🔧 Technologies
+### 🔧 Technologies
 ----
 - react
 - js
 
-###📃 Instructions
+### 📃 Instructions
 ----
-####To run it locally:
+#### To run it locally:
 - open your terminal.
 - run the following commands:
 1. `$ git clone https://github.com/itaim18/sportodo-app.git`
@@ -29,7 +29,7 @@
 
 - have a great hacking!
 
-####Manual use:
+#### Manual use:
 enter the [site](https://sportodo.netlify.app/) then enter the sport you are looking for and press the `read more` button to enjoy more information about it.
 
 ###Links
@@ -38,5 +38,5 @@ enter the [site](https://sportodo.netlify.app/) then enter the sport you are loo
 
 [Linkedin](http://localhost/ "link title")
 
-[id/name]: http://link-url/
+[id/name]: [https://github.com/itaim18]
 made by @ItaiM
