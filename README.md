@@ -12,7 +12,9 @@
 ## description
 
 The app that'll find your sport and will give you all the relevant information about it.
+
 ![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-desktop.jpeg)
+
 > All it takes is all you’ve got.
 
 ## 🔧 Technologies
