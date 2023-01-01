@@ -27,10 +27,10 @@ The app that'll find your sport and will give you all the relevant information a
 ![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-desktop.jpeg)
 
 ### Tablet:
-![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-desktop.jpeg)
+![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-tablet.jpeg)
 
 ### Mobile:
-![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-desktop.jpeg)
+![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-mobile.jpeg)
 
 ## 📃 Instructions
 
