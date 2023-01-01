@@ -9,6 +9,10 @@
 
 ![](https://github.com/itaim18/sportodo-app/blob/master/src/images/logo-sports.png)
 
+## description
+
+The app that'll find your sport and will give you all the relevant information about it.
+> All it takes is all you’ve got.
 
 ## 🔧 Technologies
 
@@ -17,14 +21,16 @@
 - CSS
 - Media queries(responsiveness)
 
-## Images
+## Responsive examples
 
 ### Desktop:
+![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-desktop.jpeg)
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+### Tablet:
+![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-desktop.jpeg)
 
-> All it takes is all you’ve got.
-
+### Mobile:
+![](https://github.com/itaim18/sportodo-app/blob/master/sportodo-desktop.jpeg)
 
 ## 📃 Instructions
 
