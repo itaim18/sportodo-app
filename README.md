@@ -41,9 +41,9 @@ The app that'll find your sport and will give you all the relevant information a
 enter the [site](https://sportodo.netlify.app/) then enter the sport you are looking for and press the `read more` button to enjoy more information about it.
 
 ## 🔗Links
-[sportodo](http://localhost/)
+[sportodo](https://sportodo.netlify.app/)
 
-[Linkedin](http://localhost/ "link title")
+[Linkedin](https://www.linkedin.com/in/itai-mizlish/)
 
 made by [@ItaiM](https://github.com/itaim18)
 
