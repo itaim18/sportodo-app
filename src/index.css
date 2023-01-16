@@ -200,11 +200,15 @@ p {
   color: #096a2e;
   font-size: xxx-large;
   transition: var(--transition);
+  rotate: 0deg;
 }
 .toggle-btn:hover {
   background: transparent;
   color: #31c48d;
   rotate: -90deg;
+}
+.reg.toggle-btn {
+  rotate: 0deg;
 }
 /* submenu */
 .submenu {
@@ -388,6 +392,7 @@ p {
   color: var(--clr-grey-10);
   background: transparent;
   border-radius: var(4px);
+  z-index: 4;
 }
 
 .button-group {
@@ -408,12 +413,16 @@ p {
   box-shadow: 0 0 3px 3px inset rgba(0, 0, 0, 0.3);
   color: var(--clr-grey-10);
 }
+
 input:focus + .label {
   transform: translate(0.25rem, -65%) scale(0.8);
   color: #fff;
   text-shadow: 0 4px var(--clr-grey-1);
   background-color: #096a2e;
   top: 0;
+  z-index: 0;
+  padding-top: 0px;
+  margin-top: 3px;
 }
 
 @media screen and (min-width: 800px) {
@@ -424,7 +433,7 @@ input:focus + .label {
     font-size: 42px;
   }
   .about-section p {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -453,7 +462,7 @@ input:focus + .label {
   width: 100%;
   background-color: var(--clr-grey-9);
   border-radius: 4px;
-  margin: 20px;
+
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .sport-card:hover {
@@ -464,6 +473,10 @@ input:focus + .label {
   margin: 20px;
   padding: 20px 0 20px 0;
   font-size: 18px;
+}
+.sport-card-icon {
+  width: 86px;
+  float: left;
 }
 .sport-card-section p {
   color: #243a52;
@@ -508,6 +521,7 @@ span {
   }
   .sport-card {
     width: 90%;
+    margin: 20px;
   }
 }
 @media screen and (min-width: 800px) {

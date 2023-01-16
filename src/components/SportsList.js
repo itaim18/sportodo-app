@@ -8,13 +8,15 @@ const SportsList = () => {
   const [isMore, setIsMore] = useState(false);
 
   const handleMore = () => {
-    setIsMore(!isMore);
+    setIsMore((prevState) => !prevState);
   };
-
   const itemsList = sports
-    .filter((item) => item.strSport.toLowerCase().includes(searchTerm))
+    .filter((item) => item.id !== 94)
+    .filter((item) => {
+      return item.attributes.name.toLowerCase().includes(searchTerm);
+    })
     .map((item) => {
-      return <SportItem key={item.idSport} {...item} />;
+      return <SportItem key={item.id} {...item} />;
     });
 
   if (loading) {
@@ -32,9 +34,12 @@ const SportsList = () => {
       <ul className="sports-links">
         {isMore ? itemsList : itemsList.slice(0, 3)}
       </ul>
-      <button onClick={handleMore} className="btn more-btn">
-        {isMore ? "see less" : "see more"}
-      </button>
+
+      {itemsList.length >= 3 ? (
+        <button onClick={handleMore} className="btn more-btn">
+          {isMore ? "see less" : "see more"}
+        </button>
+      ) : null}
     </section>
   );
 };

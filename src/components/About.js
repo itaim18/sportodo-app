@@ -3,13 +3,12 @@ const About = () => {
     <div className="about-section" id="about">
       <h1>About us</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna
-        ante, condimentum non imperdiet non, dignissim id justo. Integer vel leo
-        quis arcu feugiat cursus nec nec est. Aliquam lorem massa, efficitur
-        vitae fermentum ac, commodo vel magna. Curabitur quis sapien urna.
-        Nullam fermentum tincidunt urna at vulputate. Mauris viverra at eros nec
-        egestas. Nam accumsan nisi et mi rhoncus bibendum. Vestibulum porta, ex
-        quis imperdiet semper.
+        If you feel like you are not living an active lifestyle or working out
+        is just not doing it. This might be a good chance to start a new hobby,
+        and in case you are really competitive it might be best if you'd train
+        seriously to compete on national leagues. So either you'd prefer teams'
+        competitions or sport events here you'll find any popular sport
+        competition today.
       </p>
     </div>
   );

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import logo from "../images/logo-sports.png";
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "../context";
@@ -6,6 +7,15 @@ const Navbar = () => {
   const handleToggle = () => {
     setIsSubmenu(!isSubmenu);
   };
+
+  useEffect(() => {
+    if (!isSubmenu) {
+      document.querySelector(".toggle-btn").classList.add("reg");
+    } else {
+      document.querySelector(".toggle-btn").classList.remove("reg");
+    }
+  }, [isSubmenu]);
+
   return (
     <nav className="navbar">
       <div className="navbar-center">

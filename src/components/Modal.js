@@ -3,13 +3,7 @@ import { useGlobalContext } from "../context";
 import { IoIosClose } from "react-icons/io";
 const Modal = () => {
   const { modalData, showModal, setShowModal } = useGlobalContext();
-  const {
-    strSport,
-    strFormat,
-    strSportThumb,
-    strSportIconGreen,
-    strSportDescription,
-  } = modalData;
+  const { id, attributes, relationships } = modalData;
   return (
     <div className={`modal ${showModal ? "show" : null}`}>
       <article
@@ -27,22 +21,31 @@ const Modal = () => {
 
         <h1>
           {" "}
-          <img src={strSportIconGreen} alt="icon" /> {strSport}
+          <img
+            style={{ width: "120px", margin: "auto", display: "block" }}
+            src={attributes?.icon}
+            alt="icon"
+          />{" "}
+          {attributes?.name}
         </h1>
-        <p>
+        {/* <p>
           <span>Format:</span>
           <span style={{ color: "#256d85" }}> {strFormat}</span>
-        </p>
+        </p> */}
         <p
           style={{
             width: "90%",
             marginLeft: "3%",
           }}
         >
-          <span>Description:</span> {strSportDescription}
+          <span>Description:</span> {attributes?.description}
         </p>
 
-        <img className="sport-thumbnail" src={strSportThumb} alt={strSport} />
+        <img
+          className="sport-thumbnail"
+          src={relationships?.images.data[0]?.url}
+          alt={attributes?.name}
+        />
       </article>
     </div>
   );

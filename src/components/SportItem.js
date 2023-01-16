@@ -1,41 +1,37 @@
 import { useGlobalContext } from "../context";
-const SportItem = ({
-  idSport,
-  strSport,
-  strFormat,
-  strSportThumb,
-  strSportIconGreen,
-  strSportDescription,
-}) => {
+const SportItem = ({ id, attributes, relationships }) => {
   const { setModalData, setShowModal } = useGlobalContext();
   const handleReadMore = () => {
-    setModalData({
-      strSport,
-      strFormat,
-      strSportThumb,
-      strSportIconGreen,
-      strSportDescription,
-    });
+    setModalData({ id, attributes, relationships });
     setShowModal(true);
   };
   return (
     <li className="sport-card">
       <div className="sport-card-section">
-        <h1>
-          <img src={strSportIconGreen} alt={strSport} /> {strSport}
-        </h1>
-        <p>
+        {attributes.icon ? (
+          <img
+            className="sport-card-icon"
+            src={attributes.icon}
+            alt={attributes.name}
+          />
+        ) : null}
+        <h1> {attributes.name}</h1>
+        {/* <p>
           <span>Format:</span>
           <span style={{ color: "#256d85" }}> {strFormat}</span>
-        </p>
+        </p> */}
         <p>
-          <span>Description:</span> {strSportDescription.slice(0, 150)}
+          <span>Description:</span> {attributes.description}
           <button onClick={handleReadMore} className="read-btn">
             ...read more
           </button>
         </p>
 
-        <img className="sport-thumbnail" src={strSportThumb} alt={strSport} />
+        <img
+          className="sport-thumbnail"
+          src={relationships.images.data[0]?.url}
+          alt={attributes.name}
+        />
       </div>
     </li>
   );

@@ -5,7 +5,7 @@ const SearchBar = () => {
   const { setSearchTerm } = useGlobalContext();
 
   const searchSports = () => {
-    setSearchTerm(searchValue.current.value);
+    setSearchTerm(searchValue.current.value.toLowerCase());
   };
   const searchBtnClicked = () => {
     document.getElementsByClassName("field")[0].value = "";

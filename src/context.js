@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-const url = "https://www.thesportsdb.com/api/v1/json/2/all_sports.php";
+const url = "https://sports.api.decathlon.com/sports";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -13,7 +13,7 @@ const AppProvider = ({ children }) => {
     setLoading(true);
     const response = await fetch(url);
     const data = await response.json();
-    const { sports } = data;
+    const { data: sports } = data;
     setSports(sports);
     setLoading(false);
   };
@@ -40,7 +40,6 @@ const AppProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
-// make sure use
 export const useGlobalContext = () => {
   return useContext(AppContext);
 };
