@@ -21,7 +21,7 @@ const SportItem = ({ id, attributes, relationships }) => {
           <span style={{ color: "#256d85" }}> {strFormat}</span>
         </p> */}
         <p>
-          <span>Description:</span> {attributes.description}
+          <span>Description:</span> {attributes.description.slice(0, 100)}
           <button onClick={handleReadMore} className="read-btn">
             ...read more
           </button>

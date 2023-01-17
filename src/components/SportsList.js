@@ -12,6 +12,7 @@ const SportsList = () => {
   };
   const itemsList = sports
     .filter((item) => item.id !== 94)
+    .filter((item) => !!item.attributes.description)
     .filter((item) => {
       return item.attributes.name.toLowerCase().includes(searchTerm);
     })
